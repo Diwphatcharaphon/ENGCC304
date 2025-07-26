@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    char EmployeesID[11]; 
+    int Hour = 0;
+    float salaryPerHour = 0;
+    float totalSalary = 0;
+    printf("Input the Employees ID(Max. 10 chars): \n");
+    scanf("%10s", EmployeesID);
+    printf("Input the working hrs: \n");
+    scanf("%d", &Hour);
+    printf("Salary amount/hr: \n");
+    scanf("%f", &salaryPerHour);
+    totalSalary = Hour * salaryPerHour;
+    printf("Employees ID = %s\n", EmployeesID);
+    printf("Salary = U$ %.2f\n", totalSalary);
+    return 0;
+}
